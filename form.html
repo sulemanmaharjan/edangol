@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
-    <form action="">
-        <input type="text" name="email" placeholder="Please enter your username">
-        <input type="button" value="Subscribe">
+    <form action="fromprocess.php" method="GET" >
+        <div class="form-group">
+            
+            <input placeholder="Please enter your username" name="x" type="email" class="form-control" id="email">
+          </div>
+         <input type="submit" value="Subscribe" class="btn btn-success">
+          
     </form>
 </body>
 </html>
