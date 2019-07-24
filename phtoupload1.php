@@ -10,10 +10,43 @@
     
         
 </head>
-<body>                                           
-<form action="phpto1.php" class="form bg-warning text-danger p-5 m-5" method="post" enctype= "multipart/form-data">
+<body>   
 
-<input type = "file" name="xyz" class="form-control-sm">
+
+<?php
+/* $str = "<h1>Hello World!</h1>";
+$str = filter_var($str, FILTER_SANITIZE_STRING);
+echo $str;
+
+$y="sarmila";
+if(filter_var($y,FILTER_VALIDATE_INT))
+{
+    echo "valid";
+}
+else
+{
+    echo "invalid";
+} */
+
+if($_POST)
+{
+    $num=$_REQUEST['number'];
+    if(!.filter_var($num,FILTER_VALIDATE_INT))
+    {
+        echo "i dont think your age is ".$num;
+    }
+    else{
+        echo " wow sweet ".$num;
+    }
+}
+
+?>
+<h1>please enter your age</h1>
+
+<form action="" class="form bg-warning text-danger p-5 m-5" method="post" enctype= "multipart/form-data">
+
+
+<input type="text" name="number">
 <input type= "submit" value = "click">
 
 </form>
