@@ -5,7 +5,7 @@ $ages= array("ram"=>"21","shyam"=>"32","hari"=>"27");
 arsort($ages);
 foreach($ages as $abc=>$xyz)
 {
-   // echo $abc."----".$xyz;
+    echo $abc."----".$xyz;
 }
 
 $nums=array("ram","kris","mike");
@@ -17,7 +17,7 @@ foreach($nums as $x)
 }
 
 $matrix=array(
-    array(1,2,30),  // 00 01 02
+    array(1,2,3),  // 00 01 02
     array(4,5,6),  // 10 11 12 
     array(7,8,9)   // 20 21 22
 );
@@ -33,7 +33,7 @@ for($row=0;$row<3;$row++)
     }
     echo "<br>";
 }
-echo $sum;
+//echo $sum;
 ?>
 <script>
 
@@ -45,8 +45,8 @@ a.forEach(function(x){
 
 a.forEach(x=>document.write(x))
 
-b=a.map(x=>x+5);
+b=a.map(x=>x+4);
 
-document.write(b);
+//document.write(b);
 
 </script>
