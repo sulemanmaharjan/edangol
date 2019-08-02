@@ -17,47 +17,18 @@
     
 </head>
 <body>
-<?php
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'phpmail/Exception.php';
-require 'phpmail/PHPMailer.php';
-require 'phpmail/SMTP.php';
-$mail= new PHPMailer(true); 
-try {
-    $mail->SMTPDebug=3;
-    $mail->isSMTP();
-    $mail->HOST='smtp.gmail.com';
-    $mail->SMTPAUth=true;
-    $mail->Username="sarmila2basnet@gmail.com";
-    $mail->password='SPAN1234';
-    $mail->setFrom('sarmila2basnet@gmail.com', "deepa");
-    $mail->addAddress("subihanideepa@gmail.com","deepu");
-    $mail->isHTML(true);
-    $mail->Subject="this is email fro sarmila";
-    $mail->Body="<h1>hi iam deepa i want to be friend of you ok?</h1>";
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-    $mail->send();
-    echo 'Massage has been sent';
-}
-catch (Exception $e){
-    echo "message could not be sent mailer error:{$mail->ErrorInfo}";
-
-}
-
-
-
-
-
-
-
-
-
-
-?>
-
-    
+    <div class="container jumbotron m-5">
+    <form action="p.php" method="post" class="form">
+     <div>
+<input type="text" class="form-control" placeholder="enter user nam,e" name="u">
+     </div>
+     <br>
+     <div>
+            <input type="password" class="form-control" placeholder="enter password" name="p">
+     </div>
+     <br>
+     <input type="submit" value="login" class="btn btn-danger">
+    </form>
+  </div>
 </body>
 </html>

@@ -11,17 +11,17 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = 3;                                       // Enable verbose debug output
+   // $mail->SMTPDebug = 3;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
     $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'sarmila2basnet@gmail.com';                     // SMTP username
     $mail->Password   = 'SPAN1234';                               // SMTP password
-                                       // TCP port to connect to
+    $mail->Port       = 587;                                // TCP port to connect to
 
     //Recipients
     $mail->setFrom('sarmila2basnet@gmail.com', 'Cute Sharmili');
-    $mail->addAddress('sarmila2basnet@gmail.com', 'deepa ');     // Add a recipient
+    $mail->addAddress('subihanideepa@gmail.com', 'deepa ');     // Add a recipient
    // $mail->addAddress('ellen@example.com');               // Name is optional
    // $mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('dangolevan@gmail.com');
