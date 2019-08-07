@@ -5,25 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-    div{
-        width:300px;
-        height:300px;
-        font-family:monospace;
-
-
-    }
-    
-    </style>
 </head>
 <body>
-    <div>
-    <h1>himaliyan
-
-        <p>this is most important is for
-        anythings so our society must
-     </p>
-</h1>
+    <div class="container jumbotron"> 
+    <form action="mail.php" method="POST">
+    To:<input type="email" class="form-control" placeholder="enter e-mail" nmae="to">
+    <br><br>
+    su
+</form>
 </div>
+    
+
 </body>
 </html>

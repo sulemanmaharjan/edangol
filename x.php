@@ -1,4 +1,4 @@
-<?php
+   <?php
 $a = "user";
 $b = "jason";
 setcookie($a, $b,time()+60); 

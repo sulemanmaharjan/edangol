@@ -4,7 +4,7 @@
 
 
 $a = fopen("webdictionary.txt", "w") ;
-fwrite($a,"hell mr how d yu do");
+fwrite($a,"hello mr how d yu do");
 fclose($a);
 
 $b=fopen("webdictionary.txt", "r") ;
@@ -12,6 +12,6 @@ echo fread($b,filesize("webdictionary.txt"));
 fclose($b);
 ?>
 <?php
-$s
+echo "i am jason";
 
 ?>
