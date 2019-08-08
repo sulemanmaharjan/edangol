@@ -7,7 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="<?php echo($_SERVER[PHP_SELF])?>"method="post>"
-    Name:<input name="text"  
+    <form action="<?php echo($_SERVER[PHP_SELF])?>"method="post>">
+    Name:<input name="text" name="name">
+    <span></span>
+    <br><br>
+    E-mail:<input name="text" name="email">
+    <span></span>
+    <br><br>
+    Website:<input name="text" name="website">
+    <span></span>
+    <br><br>
+    comment:<input name="comment">
+    <br><br>
+    <input name="submit" name="login">
+</form>
+<?php
+   echo $_REQUEST["name"]
+   <
+?>
+    
 </body>
 </html>

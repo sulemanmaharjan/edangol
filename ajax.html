@@ -1,5 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="jason"></h1>
+    <button onclick="loadDoc()">fdhf</button>
+    <script>
+ x = new XMLHttpRequest();
+        function call()
+        {
+            if(x.readyState==4 && x.status==200)
+            {
+                document.getElementById("jason").innerHTML=x.responseText;
+            }
+        }
+    function loadDoc()
+    {
+       
+       x.onreadystatechange=call;
+       x.open("GET","a.php");
+       x.send();
+
+    }
+    
+    
+    
+    </script>
+</body>
+=======
 
 <head>
     <meta charset="UTF-8">
@@ -30,4 +63,5 @@
     </script>
 </body>
 
+>>>>>>> be9433eea023c14059278e48a0a13a039ef84607
 </html>

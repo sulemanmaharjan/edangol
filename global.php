@@ -1,0 +1,9 @@
+<?php
+echo $_SERVER
+
+
+
+
+
+
+?>
