@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <button>get age</button>
+    <input type="text" id="x">
+    <h1 id="hh">
+        please input name to find out age
+    </h1>
+
+    <script>
+        $(function () {
+            $('button').click(function () {
+                var sarmila = $('#x').val();
+
+                $.ajax({
+                    type: "get",
+                    url: "ajaxprocess.php",
+                    data: 'name=' + sarmila,
+                    success:function(data) {
+                        f="";
+                        
+                        if(data<=18)
+                        {
+                         f="fuchhi";
+                        }
+                        else{
+                            f="budhi mau"
+                        }
+                        if(data=="not available")
+                        {
+                            f="";
+                        }
+                      $('#hh').html("the age of "+f+" "+ sarmila + " is "+ data);
+                    }
+                })
+            })
+        });
+
+
+    </script>
+</body>
+
+</html>
