@@ -22,7 +22,7 @@ if (!empty($_GET["action"])) {
                 } else {
                     $_SESSION["cart_item"] = array_merge($_SESSION["cart_item"], $itemArray);
                 }
-            } else {/
+            } else {
                 $_SESSION["cart_item"] = $itemArray;
             }
         }
