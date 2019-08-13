@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- bootstrap js cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome cdn -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+
+    <style>
+        .he {
+            height: 150px;
+            background-image: linear-gradient(to right, rgb(246, 232, 232), white)
+        }
+
+        i {
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+            border: 1x solid grey;
+            padding: 10px;
+
+        }
+
+        .actives {
+            color: red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid he">
+        <div class="row p-5">
+            <div class="col-4 ">
+                <p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-square"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-apple"></i>
+                </p>
+            </div>
+            <div class="col-4">
+                <p><img src="images/logo.png" </p> </div> <div class="col-4 ">
+                    <div class="navbar navbar-expand-lg  navbar-light">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link actives">HOME</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">CONTACT</a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <div id="demo" class="carousel slide " data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/a.jpg" alt="Los Angeles">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/b.jpg" alt="Chicago">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/c.jpg" alt="New York">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

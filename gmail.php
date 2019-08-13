@@ -9,9 +9,12 @@
 <body>
     <div class="container jumbotron"> 
     <form action="mail.php" method="POST">
-    To:<input type="email" class="form-control" placeholder="enter e-mail" nmae="to">
+    To:<input type="email" class="form-control" placeholder="enter e-mail" name="to">
     <br><br>
-    su
+    Subject: <input type="subject" class="form-control" placeholder="enter subject" name="subject">
+    <br><br>
+    Message: <textarea type="message" class="form-control" placeholder="enter message" name="message"></textarea>
+    <br><br>
 </form>
 </div>
     
