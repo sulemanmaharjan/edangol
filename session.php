@@ -1,10 +1,13 @@
 <?php
-// Start the session
 session_start();
 ?>
 <!DOCTYPE html>
 <html>
 <body>
+    <?php
+$_SESSION['xyz']="ram";
+
+?>
 
 <?php
 $_SESSION['name']="sharmila";

@@ -27,13 +27,9 @@ foreach ($usernames as $key => $value) {
     }
 }
 
-if($valid)
-{
+if ($valid) {
     echo " you are logged in";
-}
-else
-{
+} else {
     echo "usernamer or password invalid";
     include "frm.html";
 }
-?>

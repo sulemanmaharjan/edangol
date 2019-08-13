@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #sug {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="sar"></h1>
+    <button id="pp" onclick="gw()">get ajax</button>
+
+
+    <a href="#" id="x" onclick="likeme()"> <img src="images/index.jpg" alt=""></a>
+    <div id="like"></div>
+    <input type="text" onkeyup="getsug()" id="xx" placeholder="search">
+    <h1 id="sug" onclick="process()"></h1>
+    <script>
+        function gw() {
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState == 4 && ajax.status == 200) {
+                    document.getElementById("sar").innerHTML = ajax.responseText;
+                }
+
+            }
+            ajax.open("GET", "sarmi.txt", true);
+            ajax.send();
+        }
+
+    </script>
+    <script>
+        function likeme() {
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState == 4 && ajax.status == 200) {
+                    document.getElementById("like").innerHTML = ajax.responseText;
+                    document.getElementById("like").style.color = "red";
+                }
+
+            }
+            ajax.open("post", "sarmi.txt");
+            ajax.send();
+        }
+
+    </script>
+
+    <script>
+
+        function getsug() {
+            var ser = document.getElementById("xx").value;
+            var a='sea='+ser;
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState == 4 && ajax.status == 200) {
+                    document.getElementById("sug").innerHTML = ajax.responseText;
+                    document.getElementById("sug").style.color = "red";
+                }
+
+            }
+           
+            ajax.open("post", "names.php");
+            ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            ajax.send(a);
+        }
+    </script>
+    <script>
+
+        function process() {
+            var s = document.getElementById("sug").innerHTML;
+            var t = s.substr(0, s.indexOf(' '));
+            document.getElementById("xx").value = t;
+        }
+
+    </script>
+</body>
+
+</html>

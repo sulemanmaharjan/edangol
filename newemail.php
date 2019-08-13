@@ -10,10 +10,9 @@ $subject=$_REQUEST['subject'];
 $msg=$_REQUEST['msg'];
     
 
-    require 'phpmail/Exception.php';
+require 'phpmail/Exception.php';
 require 'phpmail/PHPMailer.php';
-
-    require 'phpmail/SMTP.php';
+require 'phpmail/SMTP.php';
     $mail = new PHPMailer(true);
     try {
         $mail->isSMTP();
